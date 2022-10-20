@@ -11,5 +11,8 @@ numero = 99
 # Exibir o nome que está dentro da variável nome
 print(nome)
 
-# Exibir o número que está dentro da variável numero
-print(numero)
+# Exibir o texto 'O número dentro da variável é' seguido pelo número que está dentro da variável numero.
+print(f'O número dentro da variável é {numero}')
+
+# Exibir a frase 'Meu nome é ... e eu peguei o número ...'
+print(f'Meu nome é {nome} e eu peguei o número {numero}')
