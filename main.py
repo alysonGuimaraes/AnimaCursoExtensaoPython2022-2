@@ -1,18 +1,8 @@
-# Primeiro projeto Python!
-# print() - comando de saída
-print('Hello, World!')
+# Comando Input(): quero permitir que o usuário digite algo...
+nome = input("Digite seu nome: ")
+idade = int(input("Digite a sua idade: "))
+print(f"Olá {nome}, você tem {idade} anos.")
 
-# Quando quiser guardar uma String
-nome = 'Alyson Guimarães'
-
-# Quando quiser guardar número inteiro
-numero = 99
-
-# Exibir o nome que está dentro da variável nome
-print(nome)
-
-# Exibir o texto 'O número dentro da variável é' seguido pelo número que está dentro da variável numero.
-print(f'O número dentro da variável é {numero}')
-
-# Exibir a frase 'Meu nome é ... e eu peguei o número ...'
-print(f'Meu nome é {nome} e eu peguei o número {numero}')
+# Dobro da idade
+dobro = idade * 2
+print(f"O dobro da idade informada é {dobro}")
