@@ -1,26 +1,22 @@
-# Exemplo de laço.
+# Criação de funções
 
-# Se eu quisesse exibir números de 1 a 10.
-contador = 1
-while contador <= 10:
-  print(contador)
-  contador += 1
+preco = 1999.90
 
-# Exemplo de lista
-frutas = ["morango", "laranja", "manga"]
-print(frutas) # Mostra tudo
-print(frutas[1]) #Mostra em uma posição especifica
+# Calcular 5% de imposto e guardar na váriavel imposto
+imposto = preco * 0.05
+print(imposto)
 
-# Exibir quantidade de itens na lista
-print(len(frutas)) # length = tamanho
+# Criar função calcular_imposto() que calcula um imposto de 5% e retorna o valor...
+def calcular_imposto(preco_produto):
+  imposto = preco_produto * 0.05 # Caso troque o 0.05 por 0.07 será calculado 7%
+  return imposto
 
-# Incluir uma nova fruta
-frutas.append("uva")
-print(frutas)
+# Aqui é o uso... aqui é imposto a calcular... e exibir na tela...
+preco = 299
+imposto = calcular_imposto(preco)
+print(imposto)
 
-# Usar while para printar as frutas
-print("Exemplo frutas com while")
-i = 0
-while i < len(frutas):
-  print(frutas[i])
-  i += 1
+# Se eu quiser fazer de vários valores ao mesmo tempo
+valores = [100, 24.5, 50.6, 10]
+for valor in valores:
+  print(f"O imposto de {valor} é {calcular_imposto(valor)}") # Calculado o valor em 5%.
